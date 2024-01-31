@@ -33,28 +33,31 @@ struct CustomBettingCell: View {
                         
                 }
                 
-                HStack(spacing: 3) {
+                HStack(spacing: 2) {
                     VStack {
                         Rectangle().frame(width: 350 * winPercentage, height: 10).foregroundStyle(Color(.green))
-                        Text("\(winPercentage * 100, specifier: "%.0f")%")
+                        Text("\(winPercentage * 100, specifier: "%.0f")%(\(winPercentage * 100,specifier: "%.0f" ))")
                             .foregroundColor(.black)
                             .padding(.horizontal, 4)
+                            .font(.system(size: 12))
                            
                     }
                     
                     VStack {
                         Rectangle().frame(width: 350 * lossPercentage, height: 10).foregroundStyle(Color(.red))
-                        Text("\(lossPercentage * 100, specifier: "%.0f")%")
+                        Text("\(lossPercentage * 100, specifier: "%.0f")%(\(lossPercentage * 100,specifier: "%.0f" ))")
                             .foregroundColor(.black)
                             .padding(.horizontal, 4)
+                            .font(.system(size: 12))
                        
                     }
                     
                     VStack {
                         Rectangle().frame(width: 350 * returnPercentage, height: 10).foregroundStyle(Color(.gray))
-                        Text("\(returnPercentage * 100, specifier: "%.0f")%")
+                        Text("\(returnPercentage * 100, specifier: "%.0f")%(\(returnPercentage * 100,specifier: "%.0f" ))")
                             .foregroundColor(.black)
                             .padding(.horizontal, 4)
+                            .font(.system(size: 12))
                      
                     }
 

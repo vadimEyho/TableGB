@@ -50,7 +50,8 @@ struct SecondProgressBar: View {
 
                 Rectangle()
                     .foregroundColor(color)
-                    .frame(width: CGFloat(value * 100), height: 10)
+                    
+                    .frame(width: CGFloat(value * 30), height: 10)
             }
 
             Spacer()

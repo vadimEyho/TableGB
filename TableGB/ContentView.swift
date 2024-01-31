@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 
-                SecondCustomCellView(winPercentage: 0.7, lossPercentage: 0.2, returnPercentage: 0.6)
+                SecondCustomCellView(winPercentage: 1.94, lossPercentage: 2.17, returnPercentage: 1.26)
                 
                     CustomBettingCell(
                         bookmakerImage: Image("bwin"),
