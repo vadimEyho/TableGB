@@ -26,7 +26,7 @@ struct CustomBettingCell: View {
                 HStack {
                     bookmakerImage
                         .resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 70, height: 70)
                         .padding(.trailing, 8)
                     
                     Text("Ставок: \(totalBets)")
